@@ -3,9 +3,9 @@ import java.util.Arrays;
 
 public class Doctor extends Empleado{
 
-    ArrayList<Cita> myCitas;
-    String especialidad;
-    String nombre;
+    private ArrayList<Cita> myCitas = new ArrayList<>();
+    private String especialidad;
+    private String nombre;
 
     public Doctor() {
     }

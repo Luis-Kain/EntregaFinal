@@ -1,6 +1,6 @@
 public class Admin extends Empleado {
-    String adminUserName;
-    String adminPassword;
+    private String adminUserName;
+    private String adminPassword;
 
     public Admin() {
     }

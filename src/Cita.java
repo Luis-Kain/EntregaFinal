@@ -1,10 +1,10 @@
 public class Cita {
-    int id;
-    String fecha;
-    String hora;
-    String motivo;
-    Paciente myPaciente;
-    Doctor myDoctor;
+    private int id;
+    private String fecha;
+    private String hora;
+    private String motivo;
+    private Paciente myPaciente;
+    private Doctor myDoctor;
 
 
     public Cita() {
