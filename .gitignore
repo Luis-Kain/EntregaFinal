@@ -11,6 +11,8 @@ out/
 .settings
 .springBeans
 .sts4-cache
+.class
+.swp
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
