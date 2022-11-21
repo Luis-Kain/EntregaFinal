@@ -1,7 +1,7 @@
 public class Paciente {
-    int id;
-    String nombre;
-    Cita cita;
+    private int id;
+    private String nombre;
+    private Cita cita;
 
     public Paciente() {
 

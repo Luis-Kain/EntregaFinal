@@ -1,8 +1,8 @@
 public class Empleado {
-    int id;
-    String nombre;
-    String userName;
-    String password;
+    protected int id;
+    protected String nombre;
+    protected String userName;
+    protected String password;
 
     public Empleado() {
     }
