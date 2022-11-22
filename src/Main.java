@@ -80,9 +80,9 @@ public class Main {
                             System.out.println("Cita generada con exito\ninserte nuevo comando: ");
                             break;
                         case "4":
-                            int citaNumber;
-                            int pacienteNumber;
-                            int doctorNumber;
+                            String citaNumber;
+                            String pacienteNumber;
+                            String doctorNumber;
                             String motivo;
 
                             System.out.print("Ingresa el motivo de la cita: ");
@@ -94,7 +94,7 @@ public class Main {
                                 }
                             }
                                 System.out.print("Inserta la cita que quieres relacionar con su número de cita: ");
-                            citaNumber=sc.nextInt();
+                            citaNumber=sc.nextLine();
 
                             System.out.println("Pacientes disponibles:");
                             for (int i = 0; i<myPatients.size(); i++){
@@ -103,17 +103,17 @@ public class Main {
                                 }
                             }
                             System.out.print("Inserte el paciente que quieres relacionar con su número de paciente: ");
-                            pacienteNumber = sc.nextInt();
+                            pacienteNumber = sc.nextLine();
 
                             System.out.println("Doctores disponibles:");
                             for(int i=0; i<myDoctors.size();i++){
                                 System.out.println("Doctor " + myDoctors.get(i).getNombre() + ": " + i);
                             }
                             System.out.print("Inserta el doctor que quieres relacionar con su número de doctor: ");
-                            doctorNumber=sc.nextInt();
-                            System.out.println(doctorNumber+" "+pacienteNumber+" "+citaNumber);
-                            relacionarCita(myDates.get(citaNumber), myPatients.get(pacienteNumber),
-                                    myDoctors.get(doctorNumber),motivo);
+                            doctorNumber=sc.nextLine();
+                            relacionarCita(myDates.get(Integer.parseInt(citaNumber)),
+                                    myPatients.get(Integer.parseInt(pacienteNumber)),
+                                    myDoctors.get(Integer.parseInt(doctorNumber)),motivo);
                             System.out.println("Cita relacionada con exito");
                             break;
                         case "5":
